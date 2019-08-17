@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>REGISTRATION</title>   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+</head>
+<body>
+
+    <form method="POST" >
+    <div id="login-box">
+        <img src="gallery/6.jpg" width="100px" height="50px">
+
+         
+          <input type="text" name="Username" required placeholder="Username" id="Username"/>
+         <input type="text" name="Phone" required placeholder="Phone" id="Phone"/>
+          <input type="text" name="Email" required placeholder="Email" id="Email"/>
+          <input type="password" name="Password" required placeholder="Password" id="Password" />
+          <input type="password" name="Password2" required placeholder="Retype password" id="Password2"/>
+        
+
+          <input type="submit" name="register" value="register" onclick="return check(form)" >        
+        </div>
+        </form> 
+    <script> 
+          
+            // Function to check Whether both passwords 
+            // is same or not. 
+            function check(form) { 
+                password1 = form.Password.value; 
+                password2 = form.Password2.value; 
+  
+                // If password not entered 
+                if (password1 == '') 
+                    alert ("Please enter Password"); 
+                      
+                // If confirm password not entered 
+                else if (password2 == '') 
+                    alert ("Please confirm password"); 
+                      
+                // If Not same return False.     
+                else if (password1 != password2) { 
+                    alert ("\nPassword do not match") 
+                    return false; 
+                } 
+  
+                // If same return True. 
+                else{ 
+                    alert("you are sucessfully registered") 
+                    return true; 
+                } 
+            } 
+        </script> 
+
+     <br>
+    <br>
+    <br>
+<i><b><center><font color="black">"designed by Pradeep G"</font></center></b></i>
+   
+  
+    
+</body>    
+</html>

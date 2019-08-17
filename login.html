@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+</head>
+    <style>
+    body {
+    background-image: url(backgrounds/loginbg.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        }
+    </style>
+<body>
+    <br>
+    <br>
+   <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+    <img src="gallery/6.jpg" width="250px" height="110px"></center>
+    
+    
+<form name="loginForm" method="POST" action="https://erp.reva.edu.in/KnowledgePro/StudentLogin.do">
+<table width="20%" height="25%" background="transparent" align="center">
+
+<tr>
+<td colspan=2><center><font size=5><i><b>REVA ERP LOGIN</b></i></font></center></td>
+</tr>
+<tr>
+<td><b><i>Username:</i></b></td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+<tr>
+<td><b><i>Password:</i></b></td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td align="left"><input type="Reset"></td>
+    <td align="right"><input type="submit" onclick="return check(this.form)" value="Login"></td>
+   
+</tr>
+    <tr><td colspan=2><center><font size=5><i><button type="submit" formaction="registration.html">REGISTER</button></i></font></center></td>
+    </tr>
+
+</table>
+</form>
+        
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "pradeep" && form.pwd.value == "pradeep" ||form.userid.value == "test" && form.pwd.value == "test")
+{
+	return true;
+}
+else
+{
+	alert("error in Password or Username")
+	return false;
+}
+}
+</script>
+    
+ <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<b><center>"designed by Pradeep G"</center></b>
+</body>
+</html>
